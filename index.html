@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Ведьмак - сайт о сериале Ведьмак</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <nav class="nav-bar">
+        <img src="img/logo.png" alt="Логотип">
+        <div class="menu-list">
+          <a href="#" class="menu__item">Описание</a>
+          <a href="#" class="menu__item">Трейлер</a>
+          <a href="#" class="menu__item">Отзывы</a>
+        </div>
+        <div class="social">
+          <img class="social__icon" src="img/social-icons/github3.svg" alt="github">
+          <img class="social__icon" src="img/social-icons/instagram3.svg" alt="instagram">
+          <img class="social__icon" src="img/social-icons/telegram3.svg" alt="telegram">
+          <img class="social__icon" src="img/social-icons/vk3.svg" alt="vk">
+        </div>
+      </nav>
+      <!-- /.nav-bar -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+  <main class="main">
+    <div class="container">
+      <div class="main-content">
+        <div class="content">
+          <span class="genre">2019, фэнтези</span>
+          <div class="rating">
+            <div class="rating__star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star.svg" alt="star">
+              <img src="img/star-o.svg" alt="empty star">
+              <img src="img/star-o.svg" alt="empty star">
+              <img src="img/star-o.svg" alt="empty star">
+            </div>
+            <div class="rating__number">7/10</div>
+          </div>
+          <h1 class="main-title" >Ведьмак</h1>
+          <p class="description">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. За тугой
+          мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже
+          заколдованных принцесс.</p>
+          <button class="btn">Смотреть онлайн</button>
+        </div>
+        <button class="play">
+          <img class="play__img" src="img/play.svg" alt="Кнопка Play">
+        </button>
+      </div>
+      <!-- /.main-content -->
+     <div class="serias">
+        <div class="sliders swiper-container">
+          <div class="swiper-wrapper">
+            <div class="slide swiper-slide">
+              <img class="slide__img" src="img/card1.jpg" alt="preview first card">
+            </div>
+            <!-- /.slide 1-->
+            <div class="slide swiper-slide">
+              <img class="slide__img" src="img/card2.jpg" alt="preview second card">
+            </div>
+            <!-- /.slide 2 -->
+          </div>
+        </div>
+        <!-- /.sliders -->
+          <img class="arrow-next" src="img/arrow.svg" alt="arrow right">
+        </div>
+     </div>
+    <!-- /.container -->
+  </main>
+  <!-- /.main -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="left">
+          <span class="left__text">© 2020 The Witcher. All right reserved.</span>
+        </div>
+        <div class="right">
+          <ul class="right-menu">
+            <li class="menu-item">Privacy Policy</li>
+            <li class="menu-item">Terms of Service</li>
+            <li class="menu-item">Legal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
