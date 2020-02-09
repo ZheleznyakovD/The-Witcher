@@ -7,6 +7,7 @@
   <title>Ведьмак - сайт о сериале Ведьмак</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,18 +17,19 @@
       <nav class="nav-bar">
         <img src="img/logo.png" alt="Логотип">
         <div class="menu-list">
-          <a href="#" class="menu__item">Описание</a>
-          <a href="#" class="menu__item">Трейлер</a>
+          <a href="#Description" class="menu__item">Описание</a>
+          <a data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="menu__item">Трейлер</a>
           <a href="#" class="menu__item">Отзывы</a>
         </div>
         <div class="social">
-          <img class="social__icon" src="img/social-icons/github3.svg" alt="github">
-          <img class="social__icon" src="img/social-icons/instagram3.svg" alt="instagram">
-          <img class="social__icon" src="img/social-icons/telegram3.svg" alt="telegram">
-          <img class="social__icon" src="img/social-icons/vk3.svg" alt="vk">
+         <a target="_blank" href="https://github.com/ZheleznyakovD"><img class="social__icon" src="img/social-icons/github3.svg" alt="github"></a>
+         <a target="_blank" href="https://www.instagram.com/mr.zheleznyakov/"><img class="social__icon" src="img/social-icons/instagram3.svg" alt="instagram"></a>
+         <a target="_blank" href="https://t.me/webtweek"><img class="social__icon" src="img/social-icons/telegram3.svg" alt="telegram"></a>
+         <a target="_blank" href="https://vk.com/web.zheleznyakov"><img class="social__icon" src="img/social-icons/vk3.svg" alt="vk"></a>
         </div>
       </nav>
       <!-- /.nav-bar -->
+         <div class="burger"></div>
     </div>
     <!-- /.container -->
   </header>
@@ -53,32 +55,45 @@
             <div class="rating__number">7/10</div>
           </div>
           <h1 class="main-title" >Ведьмак</h1>
-          <p class="description">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. За тугой
+          <p id="Description" class="description">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. За тугой
           мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже
           заколдованных принцесс.</p>
-          <button class="btn">Смотреть онлайн</button>
+          <a data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="btn">Смотреть онлайн</a>
         </div>
-        <button class="play">
+        <a data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="play">
           <img class="play__img" src="img/play.svg" alt="Кнопка Play">
-        </button>
+        </a>
       </div>
       <!-- /.main-content -->
-     <div class="serias">
-        <div class="sliders swiper-container">
+
+      <div class="serias">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <div class="slide swiper-slide">
-              <img class="slide__img" src="img/card1.jpg" alt="preview first card">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="cards serias-1">
+                <span class="cards-number">Серия #1</span>
+                <h4 class="cards-title">Начало конца</h4>
+              </div>
             </div>
-            <!-- /.slide 1-->
-            <div class="slide swiper-slide">
-              <img class="slide__img" src="img/card2.jpg" alt="preview second card">
+            <div class="swiper-slide">
+              <div class="cards serias-2">
+                <span class="cards-number">Серия #2</span>
+                <h4 class="cards-title">Четыре знака</h4>
+              </div>
             </div>
-            <!-- /.slide 2 -->
+            <div class="swiper-slide">
+              <div class="cards serias-2">
+                <span class="cards-number">Серия #3</span>
+                <h4 class="cards-title">Четыре знака</h4>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- /.sliders -->
-          <img class="arrow-next" src="img/arrow.svg" alt="arrow right">
-        </div>
+        <img class="arrow" src="img/arrow.svg" alt="Arrow for slider">
+      </div>
+      <!-- /.serias -->
      </div>
     <!-- /.container -->
   </main>
@@ -101,6 +116,8 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
