@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ведьмак | The Witcher</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav-bar">
+        <img src="img/logo.png" alt="Логотип">
+        <div class="menu-list">
+          <a href="index.html" class="menu__item">Главная</a>
+          <a data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="menu__item">Трейлер</a>
+          <a href="#" class="menu__item">Отзывы</a>
+        </div>
+        <div class="social">
+          <a target="_blank" href="https://github.com/ZheleznyakovD"><img class="social__icon"
+              src="img/social-icons/github3.svg" alt="github"></a>
+          <a target="_blank" href="https://www.instagram.com/mr.zheleznyakov/"><img class="social__icon"
+              src="img/social-icons/instagram3.svg" alt="instagram"></a>
+          <a target="_blank" href="https://t.me/webtweek"><img class="social__icon" src="img/social-icons/telegram3.svg"
+              alt="telegram"></a>
+          <a target="_blank" href="https://vk.com/web.zheleznyakov"><img class="social__icon"
+              src="img/social-icons/vk3.svg" alt="vk"></a>
+        </div>
+      </nav>
+      <!-- /.nav-bar -->
+      <div class="burger"></div>
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+  <main class="main">
+    <div class="container">
+      <div class="movie-trailer animated fadeIn">
+        <video autoplay loop muted>
+          <source src="https://media.giphy.com/media/dViQ07sypY6ldb2KDy/source.mp4">
+        </video>
+      </div>
+      <div class="reviews animated fadeInLeft">
+        <div class="swiper-container swiper-feedback">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="feedback">
+                <span class="feedback-name">Наталья</span>
+                <span class="feedback-description">много придуманного и додуманного. Битва с драконом вообще не по книге.
+                  Лютик.... где его любимая шляпа с пером??? Монжно
+                  ещё продолжать писать не соответствия. Ну а в целом, средняк. Посмотреть можно</span>
+                <span class="feedback-date">6 января 2020</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback">
+                <span class="feedback-name">константин</span>
+                <span class="feedback-description">Третье желание Геральта - никогда не терять Йеннифер, суть же раскрывается в 6-ой серии, разве нет?</span>
+                <span class="feedback-date">8 января 2020</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback">
+                <span class="feedback-name">Mike</span>
+                <span class="feedback-description">Очень толковое описание серий, лучшее в сети. Спасибо за труд.</span>
+                <span class="feedback-date">13 января 2020</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback">
+                <span class="feedback-name">Christofer</span>
+                <span class="feedback-description">Соглашусь, лучшее описание серий Ведьмака в интернете. Вроде ничего важного не упущено. Но несколько моментов не
+                описано, например, как Цири сбежала от Мышовура (ненастоящего), и ещё по мелочи.</span>
+                <span class="feedback-date">13 января 2020</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback">
+                <span class="feedback-name">Танос</span>
+                <span class="feedback-description">Подготовка статьи с полным объяснением серий «Ведьмака» требует времени. Если Вам нужны описания серий в двух
+                предложениях, их можно найти на других сайтах. Только здесь полное описание содержания серий с кадрами из сериала. Но
+                такая статья быстро не готовится.</span>
+                <span class="feedback-date">25 января 2020</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="bowandarrow" src="img/bowandarrow.svg" alt="bow and arrow">
+      </div>
+
+    </div>
+    <!-- /.container -->
+  </main>
+  <!-- /.main -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="left">
+          <span class="left__text">© 2020 The Witcher. All right reserved.</span>
+        </div>
+        <div class="right">
+          <ul class="right-menu">
+            <li class="menu-item">Privacy Policy</li>
+            <li class="menu-item">Terms of Service</li>
+            <li class="menu-item">Legal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
