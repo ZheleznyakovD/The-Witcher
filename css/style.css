@@ -43,6 +43,12 @@ img {
   max-width: 100%;
 }
 
+@media (max-width: 700px) {
+  body {
+    background-position: center;
+  }
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,6 +553,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 1;
   }
   .logo {
     margin-top: 15px;
